@@ -3,4 +3,5 @@ venv/
 terraform.tfstate
 terraform.tfstate.backup
 .terraform.lock.hcl
-pycache/
+pycache/.terraform/
+providers/
