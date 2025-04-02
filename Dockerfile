@@ -1,13 +1,7 @@
 FROM python:3.9
-
-WORKDIR /app
-
+WORKDIR /src
 COPY requirements.txt .
-COPY /voting-app/azure-vote .
 RUN pip install --no-cache-dir -r requirements.txt
-
 COPY . .
-
-CMD ["python", "/app/main.py"]
-
-EXPOSE 80
+CMD ["python", "/src/app.py"]
+EXPOSE 8080
